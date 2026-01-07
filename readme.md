@@ -7,7 +7,7 @@
 Ensure you have the following installed on your system:
 
 - **Python 3.9 or higher**
-- **Virtualenv** (recommended)
+- **Docker** (recommended)
 - **PostgreSQL**
 
 ---
