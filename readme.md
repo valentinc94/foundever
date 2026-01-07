@@ -30,11 +30,6 @@ cd foundever
 docker-compose build
 ```
 
-- **Local Development**:
-  ```bash
-    docker-compose build
-  ```
-
 ### 3. Configure Environment Variables
 
 Create a `.env` file in the root directory and set the required environment variables. Example:
@@ -56,7 +51,7 @@ To start the FastAPI server locally, use the following command:
 docker-compose up
 ```
 
-# Note: On the first run (or after migration changes), the app may fail to connect if PostgreSQL is still initializing. Just restart the containers:
+###  Note: On the first run (or after migration changes), the app may fail to connect if PostgreSQL is still initializing. Just restart the containers:
 
 ```bash
 docker-compose down && docker-compose up
