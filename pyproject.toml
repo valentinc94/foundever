@@ -1,10 +1,21 @@
-[project]
-name = "foundever-interview-assignment"
-version = "0.0.1"
-requires-python = ">=3.12"
-description = "FoundEver Take-home Interview Assignment"
-authors = [
-    { name = "Foundever Backend Team", email = "vadim.shestopalov@foundever.com" },
-]
-readme = "README.md"
-dependencies = ["fastapi"]
+[tool.isort]
+line_length = 100
+multi_line_output = 3
+include_trailing_comma = true
+skip = ["migrations"]
+
+[tool.black]
+line-length = 100
+
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.mypy]
+exclude = ["tests"]
+
+[tool.pytest.ini_options]
+testpaths = ["foundever/tests"]
+python_files = "test_*.py"
+python_classes = "Test*"
+python_functions = "test_*"
