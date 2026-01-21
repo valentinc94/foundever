@@ -35,4 +35,4 @@ async def root():
 
 
 # Include API routers
-app.include_router(users_routes.router, prefix="/api")
+app.include_router(users_routes.router, prefix="/api/users/")
